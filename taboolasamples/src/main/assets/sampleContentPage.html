@@ -1,99 +1,97 @@
 <html>
-   <head>
-      <meta name='viewport' content='width=device-width, user-scalable=no'/>
-      <script type="text/javascript">
-         !function (e, f, u, i) {
-             if (!document.getElementById(i)) {
-                 e.async = 1;
-                 e.src = u;
-                 e.id = i;
-                 f.parentNode.insertBefore(e, f);
-             }
-         } (document.createElement('script'),
-             document.getElementsByTagName('script')[0],
-             'https://cdn.taboola.com/libtrc/sdk-tester/mobile-loader.js',
-             'tb-mobile-loader-script');
-         
-      </script>
-   </head>
-   <body>
-      <h2>Tribune Publishing: One of the Biggest Publishers in the US Now Uses Taboola Feed.</h2>
-      <img src="https://blog.taboola.com/wp-content/uploads/2018/11/tronc-header.jpg" alt="Smiley face"
-         width="400">
-      <p>Many years ago I met Grant Whitmore, who then was the executive vice president of digital for the
-         New York Daily News. Grant is now executive vice president and general manager, northeast region
-         at Tribune Publishing, which acquired NYDN, as well as a dear friend.
-      </p>
-      <p> A lot has changed for both of us, but one thing is always consistent: our mutual commitment to
-         making our partnership first and foremost focused on product and innovation, something I always
-         appreciate when it comes to working with Grant and his team.
-      </p>
-      <p> NYDN was actually the first publisher to test and implement Taboola Feed when we came up with
-         the concept of transforming the open web from “widgets” to a consistent UX that brings various
-         experiences and formats in a personalized, non-intrusive way for consumers.
-      </p>
-      <p>Taboola Feed serves sponsored content, video, and organic recirculation in a continuous feed of
-         ‘cards’ that appear below articles, similar to social feeds, providing engaging and brand-safe
-         experiences.
-      </p>
-      <p>Now I’m excited to announce that Tribune will launch Taboola Feed exclusively across all of their
-         digital properties, including incredible brands such as the Chicago Tribune, the Baltimore Sun,
-         and the Orlando Sentinel.
-      </p>
-      <blockquote>
-         <p><span style="font-weight: 400;">“Balancing sustainable revenue streams with high-quality user experiences is the cornerstone of today’s digital media industry. </span></p>
-         <p><span style="font-weight: 400;">The Taboola Feed achieved significant results for New York Daily News, and we are looking forward to bringing similar success across all of our properties. We appreciate the innovation that Taboola has brought to our audiences and look forward to continuing this partnership together.”</span>
-         </p>
-      </blockquote>
-      <div id='taboola_mid_article'></div>
-      <h3>Investing in user experience is key for publisher and advertiser success.</h3>
-      <p>I think there is an incredible “moment of next” that happens when people finish reading an
-         article, and that moment is where as a company we focus, enabling users to discover things they
-         may like and never knew existed, exploring more content and video at that special moment.
-      </p>
-      <p>I believe strongly in our efforts to support local and national journalism, which continues to
-         play such a crucial role in our daily lives.
-      </p>
-      <p>By leveraging discovery and personalization technology, we can boost the value of every user’s
-         visit and encourage users to stay on publishers’ websites and discover more content that they
-         may be interested in consuming next.
-      </p>
-      <div id='taboola_below_article'></div>
-      <script type='text/javascript'>
-         window._taboola = window._taboola || [];
-         
-         _taboola.push({
-             article: 'auto',
-             url: ''
-         });
-         
-         _taboola.push({
-             mode: 'alternating-widget-without-video',
-             container: 'taboola_mid_article',
-             placement: 'Mid Article',
-             target_type: 'mix'
-         });
-         
-          _taboola.push({
-             mode: 'thumbs-feed-01',
-             container: 'taboola_below_article',
-             placement: 'Feed without video',
-             target_type: 'mix'
-         });
-         
-         _taboola["mobile"] = [];
-         _taboola["mobile"].push({
-         
-             // set view id in order to prevent duplicated between different placements (optional)
-             taboola_view_id:new Date().getTime(),
-         
-             // override publisher from script url
-             publisher:"sdk-tester"
-         });
-         
-         _taboola.push({
-             flush: true
-         });                                                      
-      </script>
-   </body>
+<head>
+   <meta name='viewport' content='width=device-width, user-scalable=no' />
+   <script type="text/javascript">
+            var os = (function() {
+              var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+              if (/windows phone/i.test(userAgent)) return 'Windows Phone';
+              if (/android/i.test(userAgent)) return 'Android';
+              if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) return 'iOS';
+              return 'unknown';
+            })()
+
+            if(os === 'Android') {
+                window.taboolaMobilePubName = 'nbcnewsappandroid';
+            } else if (os === 'iOS'){
+                window.taboolaMobilePubName = 'nbcnewsappios';
+            }
+
+            !function (e, f, u, i) {
+                if (!document.getElementById(i)){
+                    e.async = 1;
+                    e.src = u;
+                    e.id = i;
+                    f.parentNode.insertBefore(e, f);
+                }
+            }(document.createElement('script'),
+              document.getElementsByTagName('script')[0],
+              'https://cdn.taboola.com/libtrc/' + window.taboolaMobilePubName + '/mobile-loader.js','tb-mobile-loader-script');
+            </script>
+</head>
+
+<body>
+<p>Nam euismod mauris id sapien mattis interdum. Curabitur ligula turpis, efficitur vitae est id, porttitor tempus diam. Phasellus nec lacus rhoncus mauris facilisis feugiat. Cras blandit dignissim facilisis. In blandit purus odio, sagittis porta neque rutrum vitae. Vestibulum consectetur, arcu et venenatis pulvinar, arcu lorem viverra nunc, commodo eleifend velit mauris eget eros. Proin pretium ex vel quam dapibus dictum.
+</p>
+
+<div id='taboola1'>
+</div>
+</p>
+<div id='logs'></div>
+
+<p>Nam euismod mauris id sapien mattis interdum. Curabitur ligula turpis, efficitur vitae est id, porttitor tempus diam. Phasellus nec lacus rhoncus mauris facilisis feugiat. Cras blandit dignissim facilisis. In blandit purus odio, sagittis porta neque rutrum vitae. Vestibulum consectetur, arcu et venenatis pulvinar, arcu lorem viverra nunc, commodo eleifend velit mauris eget eros. Proin pretium ex vel quam dapibus dictum.
+</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla bibendum mauris eget odio fermentum, non elementum lectus dapibus. Mauris egestas euismod orci molestie aliquet. Curabitur posuere, ante rhoncus sodales suscipit, sem tellus viverra erat, et venenatis augue quam non diam. In aliquam arcu eget nisl imperdiet finibus. Nunc pharetra sapien felis, vitae aliquam lorem bibendum in. Donec lacinia blandit tellus quis rutrum. Vivamus mattis mollis porta. Ut eleifend nisi quis magna faucibus ultricies.
+</p>
+<p>Nam euismod mauris id sapien mattis interdum. Curabitur ligula turpis, efficitur vitae est id, porttitor tempus diam. Phasellus nec lacus rhoncus mauris facilisis feugiat. Cras blandit dignissim facilisis. In blandit purus odio, sagittis porta neque rutrum vitae. Vestibulum consectetur, arcu et venenatis pulvinar, arcu lorem viverra nunc, commodo eleifend velit mauris eget eros. Proin pretium ex vel quam dapibus dictum.
+</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla bibendum mauris eget odio fermentum, non elementum lectus dapibus. Mauris egestas euismod orci molestie aliquet. Curabitur posuere, ante rhoncus sodales suscipit, sem tellus viverra erat, et venenatis augue quam non diam. In aliquam arcu eget nisl imperdiet finibus. Nunc pharetra sapien felis, vitae aliquam lorem bibendum in. Donec lacinia blandit tellus quis rutrum. Vivamus mattis mollis porta. Ut eleifend nisi quis magna faucibus ultricies.
+</p>
+
+<p>
+   <a href="http://example.com">some link on the publisher page</a>
+</p>
+
+
+<div id='taboola2'>
+</div>
+
+
+
+<script type='text/javascript'>
+            window._taboola = window._taboola || [];
+
+            _taboola.push({
+              article: 'auto',
+              url: ''
+            });
+
+            _taboola.push({
+              mode: 'thumbnails-feed-mobile',
+              container: 'taboola1',
+              placement: 'placement1',
+              target_type: 'mix'
+            });
+
+            _taboola.push({
+              mode: 'thumbnails-feed-mobile',
+              container: 'taboola2',
+              placement: 'App Below Article Thumbnails',
+              target_type: 'mix'
+            });
+
+
+            _taboola["mobile"] = [];
+            _taboola["mobile"].push({
+              // run sdkless when testing the js on a browser (no sdk) (optional)
+              allow_sdkless_load:false,
+              taboola_view_id:new Date().getTime(),
+              // override publisher from script url
+              publisher:window.taboolaMobilePubName
+            });
+
+            _taboola.push({
+              flush: true
+            });
+            </script>
+</body>
 </html>
